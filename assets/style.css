@@ -26,8 +26,9 @@ a{
   color: #000;
 }
 
-/* === === HEADER === === */
 
+
+/* === === HEADER === === */
 header{
   width: 100%;
 }
@@ -35,6 +36,7 @@ header{
 .container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   width: 90%;
   max-width: 1200px;
@@ -46,4 +48,52 @@ header nav ul{
   display: flex;
 }
 
+header nav ul li a{
+  padding: 10px;
+  color: gray;
+}
+
+.nav-button .button, .button{
+  padding: 10px 30px;
+  color: #fff;
+  background: rgb(50,209,102);
+  background: linear-gradient(90deg, rgba(50,209,102,1) 0%, rgba(46,198,151,1) 35%, rgba(44,186,208,1) 100%);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
 /* === === END HEADER === === */
+
+
+
+/* === === SECTION HERO === === */
+section.hero{
+  width: 100%;
+  padding: 70px 0;
+  background-image: url(./images/bg-intro-desktop.svg);
+  background-position-x: 141%;
+  background-position-y: 70%;
+  background-repeat: no-repeat;
+  background-size: 67% 156%;
+  position: relative;
+}
+
+aside h1{
+  font-size: 6rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+aside p{
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.img-cel{
+  right: 0;
+  position: absolute;
+}
+
+
+/* === === END SECTION HERO === === */
+
