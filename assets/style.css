@@ -75,6 +75,7 @@ header nav ul li a{
 section.hero{
   width: 100%;
   padding: 120px 0;
+  background: hsl(0, 0%, 98%);
   background-image: url(./images/bg-intro-desktop.svg);
   background-position-x: 141%;
   background-position-y: 70%;
@@ -92,7 +93,7 @@ section.hero{
 }
 
 aside h1{
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -100,6 +101,7 @@ aside h1{
 aside p{
   max-width: 440px;
   font-size: 1.8rem;
+  line-height: 2.8rem;
   margin-bottom: 40px;
 }
 
@@ -109,12 +111,46 @@ aside p{
   top: -119px;
   right: -6px;
 }
-
-
-
 /* === === END SECTION HERO === === */
 
-/*=== === MEDIA QUERYS === === */
+
+
+/* === === SECTION PRINCIPAL === ===*/
+section.principal{
+  width: 100%;
+  padding: 90px 0;
+  background: hsl(220, 16%, 96%);
+}
+
+.container-principal{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-1 h1{
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.grid-1 p{
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+
+
+
+
+/* === === MOBILE | MEDIAS QUERYS === ===*/
 @media(max-width: 1040px){
   aside h1{
     font-size: 4rem;
