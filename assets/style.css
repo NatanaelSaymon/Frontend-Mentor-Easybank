@@ -31,6 +31,12 @@ img{
   max-width: 100%;
 }
 
+:root{
+  --color-title: hsl(233, 26%, 24%);
+  --color-p: hsl(233, 8%, 62%);
+  --color-bg-principal: linear-gradient(90deg, rgba(50,209,102,1) 0%, rgba(46,198,151,1) 35%, rgba(44,186,208,1) 100%);
+}
+
 
 
 /* === === HEADER === === */
@@ -55,14 +61,14 @@ header nav ul{
 
 header nav ul li a{
   padding: 10px;
-  color: gray;
+  color: var(--color-p);
 }
 
 .nav-button .button, .button{
   padding: 10px 30px;
   color: #fff;
   background: rgb(50,209,102);
-  background: linear-gradient(90deg, rgba(50,209,102,1) 0%, rgba(46,198,151,1) 35%, rgba(44,186,208,1) 100%);
+  background: var(--color-bg-principal);
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -94,6 +100,7 @@ section.hero{
 
 aside h1{
   font-size: 5.5rem;
+  color: var(--color-title);
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -101,6 +108,7 @@ aside h1{
 aside p{
   max-width: 440px;
   font-size: 1.8rem;
+  color: var(--color-p);
   line-height: 2.8rem;
   margin-bottom: 40px;
 }
@@ -130,19 +138,37 @@ section.principal{
 
 .grid-1 h1{
   font-size: 4rem;
+  color: var(--color-title);
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .grid-1 p{
   font-size: 1.8rem;
+  color: var(--color-p);
   line-height: 2.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .grid-2{
   display: grid;
+  column-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-item-img{
+  margin-bottom: 40px;
+}
+
+.grid-item h3{
+  font-size: 2.5rem;
+  color: var(--color-title);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.grid-item p{
+  color: var(--color-p);
 }
 
 
@@ -151,6 +177,12 @@ section.principal{
 
 
 /* === === MOBILE | MEDIAS QUERYS === ===*/
+@media(max-width: 1211px){
+  .grid-2{
+    row-gap: 40px;
+  }
+}
+
 @media(max-width: 1040px){
   aside h1{
     font-size: 4rem;
@@ -278,5 +310,19 @@ section.principal{
     line-height: 4rem;
     margin: 40px 0;
     color: #2C304C;
+  }
+}
+
+@media(max-width: 589px){
+  .grid-1{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .grid-item{
+    display: grid;
+    justify-items: center;
+    text-align: center;
   }
 }
