@@ -244,6 +244,23 @@ section.article{
   margin-bottom: 50px;
 }
 
+.article .card-desc .autor{
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: var(--color-p);
+}
+
+.article .card-desc h3{
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.article .card-desc p{
+  font-size: 1.5rem;
+  color: var(--color-p);
+}
+
 /* === === END SECTION ARTICLE === === */
 
 
@@ -253,7 +270,8 @@ section.article{
 
 /* === === MOBILE | MEDIAS QUERYS === ===*/
 @media(max-width: 1211px){
-  .grid-2{
+  .grid-2,
+  .cards{
     row-gap: 40px;
   }
 }
