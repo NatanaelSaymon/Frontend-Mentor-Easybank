@@ -204,7 +204,7 @@ section.article{
 }
 
 .card-img-1{
-  background-image: url(/assets/images/image-currency.jpg);
+  background-image: url('./images/image-currency.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,7 +214,7 @@ section.article{
 }
 
 .card-img-2{
-  background-image: url(/assets/images/image-restaurant.jpg);
+  background-image: url('./images/image-restaurant.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -224,7 +224,8 @@ section.article{
 }
 
 .card-img-3{
-  background-image: url(/assets/images/image-plane.jpg);
+  
+  background-image: url('./images/image-plane.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -234,7 +235,7 @@ section.article{
 }
 
 .card-img-4{
-  background-image: url(/assets/images/image-confetti.jpg);
+  background-image: url('./images/image-confetti.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -388,7 +389,7 @@ footer{
     display: grid;
     justify-items: center;
     grid-row: 1;
-    background-image: url(./images/bg-intro-mobile.svg);
+    background-image: url('./images/bg-intro-mobile.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
