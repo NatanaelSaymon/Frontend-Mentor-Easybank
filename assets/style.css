@@ -203,39 +203,40 @@ section.article{
   border-bottom-right-radius: 5px;
 }
 
-.card-img-1{
+.cards .card-item{
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.cards .card-item:hover{
+  box-shadow: 0px 1px 9px -3px #000;
+  transform: translateY(-7px);
+}
+
+.cards .card-img-1{
+  background-color: hsl(0, 0%, 98%);
   background-image: url('./images/image-currency.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
-.card-img-2{
+.cards .card-img-2{
+  background-color: hsl(0, 0%, 98%);
   background-image: url('./images/image-restaurant.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
-.card-img-3{
-  
+.cards .card-img-3{
+  background-color: hsl(0, 0%, 98%);
   background-image: url('./images/image-plane.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
-.card-img-4{
+.cards .card-img-4{
+  background-color: hsl(0, 0%, 98%);
   background-image: url('./images/image-confetti.jpg');
+}
+
+.card-img-1,
+.card-img-2,
+.card-img-3,
+.card-img-4{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
