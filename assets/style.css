@@ -42,6 +42,8 @@ img{
 /* === === HEADER === === */
 header{
   width: 100%;
+  /* height: 100px;
+  display: flex; */
 }
 
 .container{
@@ -65,7 +67,7 @@ header nav ul li a{
 }
 
 .nav-button .button, .button{
-  display: block; /*para modificar a altura e largura*/
+  display: block; /*para modificar a altura e largura da tag <a>*/
   max-width: 200px;
   height: 40px;
   text-align: center;
